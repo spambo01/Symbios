@@ -22,38 +22,6 @@ function adjustAdminBarPositioning() {
 	}
 }
 
-function searchPopupController() {
-	$(".search-popup-opener").on("click", function(e) {
-		e.preventDefault();
-		$(".search-popup").addClass('shown');
-		$('.section-menu-stripe, .section-logo-area, .section-main-content, .section-footer').addClass('mauer-narrator-blur-filter');
-		setTimeout(function(){
-			$(".search-popup #s").focus();
-		}, 200); // needs to be greater than the animation duration
-	});
-
-	$(".search-popup-closer").on("click", function(e) {
-		e.preventDefault();
-		$(".search-popup").removeClass('shown');
-		$('.section-menu-stripe, .section-logo-area, .section-main-content, .section-footer').removeClass('mauer-narrator-blur-filter');
-	});
-
-	$(document).keydown(function(e) {
-		if (e.keyCode == 27) {
-			$(".search-popup").removeClass('shown');
-			$('.section-menu-stripe, .section-logo-area, .section-main-content, .section-footer').removeClass('mauer-narrator-blur-filter');
-		}
-	});
-}
-
-
-function adjustSearchPopupOffset() {
-	if($('body').hasClass('admin-bar')) {
-		$('.search-popup').css('top', $('#wpadminbar').height() + 'px');
-	}
-}
-
-
 function commentFormHighlightNextBorder() {
 
 	$('.comment-respond p.comment-form-author input')
@@ -94,40 +62,6 @@ function commentFormHighlightNextBorder() {
 
 }
 
-
-function mauerInstafeed() {
-	if ($('#mauer-narrator-instafeed-settings').length) {
-		var nuOfPics = 14; // use an even number
-		var breakpoint = 991;
-
-		var relativeWidth = (100 / nuOfPics) * 1;
-
-		var token  = $('#mauer-narrator-instafeed-settings #accessToken').text();
-
-		var feed = new Instafeed({
-			get: 'user',
-			userId: token.substr(0, token.indexOf('.')),
-			accessToken: token,
-			resolution: 'thumbnail',
-			limit: nuOfPics,
-			target: 'mauer-narrator-instafeed',
-			template: '<a href="{{link}}" target="_blank" class="mauer-narrator-instafeed-thumb-link" style="width:' + relativeWidth + '%;"><div class="mauer-narrator-instafeed-thumb-container" style="background-image: url(\'{{image}}\'); background-size: cover; background-position: center;"></div><div class="instafeed-thumb-overlay"></div></a>',
-			error: function(error) {
-				var errorIntro = $($('#mauer-narrator-instafeed')).data('errorIntro');
-				$('#mauer-narrator-instafeed').append(errorIntro + '"' + error + '"');
-			},
-			after: function() {
-				$('#mauer-narrator-instafeed').append($('<div class="clearfix"></div>'));
-				if ($(window).width() <= breakpoint) {$('#mauer-narrator-instafeed a').css('width',relativeWidth*2+'%');} // initial check
-				$(window).resize(function(){
-					if ($(window).width() <= breakpoint) {$('#mauer-narrator-instafeed a').css('width',relativeWidth*2+'%');}
-					else {$('#mauer-narrator-instafeed a').css('width',relativeWidth+'%');}
-				});
-			},
-		});
-		feed.run();
-	}
-}
 
 
 function adjustEmbeddediFrameDimensions() {
@@ -212,9 +146,6 @@ function adjustOrphans() {
 
 $(document).ready(function() {
 	adjustHtmlMinHeight();
-	adjustSearchPopupOffset();
-	searchPopupController();
-	mauerInstafeed();
 	setTimeout(adjustStickyFooter, 100);
 	commentFormHighlightNextBorder();
 	adjustAdminBarPositioning();
@@ -236,7 +167,6 @@ $(window).resize(function(){
 	adjustHtmlMinHeight();
 	adjustEmbeddediFrameDimensions();
 	setTimeout(adjustStickyFooter, 100);
-	adjustSearchPopupOffset();
 	adjustAdminBarPositioning();
 });
 

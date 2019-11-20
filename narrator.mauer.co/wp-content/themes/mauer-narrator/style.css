@@ -2703,7 +2703,7 @@ body {
 }
 
 .title-upper-top{
-    padding-bottom: 14em;
+    /*padding-bottom: 14em;*/
     margin-top:0em;
 }
 
@@ -2969,4 +2969,14 @@ p.comment-subscription-form + p.comment-subscription-form {
 	position: relative;
 	top: -1.1rem;
 	margin-bottom: 1.4rem;
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.grayscale:hover {
+	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+	filter: none;
 }
