@@ -1148,7 +1148,6 @@ abbr[title], acronym[title] {
 
 .big-latest-textual-side {
 	margin-left: -44px;
-	/*padding: 9.0rem 18%;*/
 	text-align: left;
 }
 
@@ -1198,12 +1197,12 @@ abbr[title], acronym[title] {
 	object-fit: cover; /* for object-fit polyfill to work, the element needs data-object-fit attribute set */
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 	.post-card.big .entry-thumb-wrapper,
 	.post-card.big .entry-thumb-wrapper img {
 		min-height: 530px;
 	}
-}
+} */
 
 @media (max-width: 991px) {
 	.post-card.big .entry-thumb-wrapper,
