@@ -51,7 +51,7 @@ html {
 
 body {
 	background-color: #fefefe;
-	font-family: 'Spectral', 'Cormorant Garamond', 'Adobe Garamond', 'Garamond', Times, serif;
+	font-family: 'Questrial', sans-serif;
 	font-size: 1.9rem;
 	font-weight: 300;
 	line-height: 1.6;
@@ -86,7 +86,6 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #141414;
 	position: relative;
 	line-height: 1.32;
@@ -304,7 +303,7 @@ iframe {
 }
 
 .container-fluid-with-max-width {
-	max-width: 1388px;
+	max-width: 1620px;
 	padding: 0 44px;
 }
 
@@ -514,7 +513,6 @@ button {
 	background-color: #231f20;
 	color: #fff;
 	text-align: center;
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	text-transform: lowercase;
@@ -596,7 +594,6 @@ div.wpcf7 {
 
 span.wpcf7-not-valid-tip {
 	color: #961515;
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	display: block;
 	padding: .4rem 0 0;
@@ -613,7 +610,6 @@ div.wpcf7-mail-sent-ok {
 }
 
 div.wpcf7-response-output {
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	font-weight: 400;
 	padding: 1.3rem 1.6rem 1.0rem;
@@ -631,9 +627,7 @@ div.wpcf7-response-output {
 3. HEADER AND MENU
 ------------------------------------------------- */
 
-.section-menu-stripe {
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
 
 .menu-stripe-wrapper {
 	padding: 3.4rem 0 3.3rem;
@@ -1222,6 +1216,11 @@ abbr[title], acronym[title] {
     /* height: 8vh; */
 }
 
+.empty-vertical-space1 {
+    margin-bottom: 2vh;
+    /* height: 8vh; */
+}
+
 .post-card .entry-thumb-wrapper-top {
 	position: relative;
 	text-align: center;
@@ -1377,7 +1376,6 @@ abbr[title], acronym[title] {
 
 .entry-meta,
 .entry-meta a {
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 1.4rem;
 	letter-spacing: .04em;
@@ -1499,7 +1497,6 @@ abbr[title], acronym[title] {
 
 .more-link-span {
 	display: inline-block;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: .04em;
 	padding-right: 13px;
@@ -1656,14 +1653,12 @@ blockquote,
 blockquote,
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	font-size: 2.8rem;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	line-height: 1.5;
 	color: #121212;
 }
 
 .wp-block-quote:not(.is-large):not(.is-style-large) cite {
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .2em;
 	font-size: 1.7rem;
@@ -1737,7 +1732,6 @@ blockquote cite {
 }
 
 .entry-tags {
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem!important;
 	letter-spacing: .03em;
 	text-transform: none;
@@ -1765,7 +1759,6 @@ blockquote cite {
 
 .mauer-narrator-wp-linked-pages-holder {
 	padding-top: 4.8rem;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1.7rem;
 	color: #444;
@@ -1831,7 +1824,6 @@ blockquote cite {
 }
 
 .sd-social-icon .sd-button span.share-count {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px!important;
     letter-spacing: -.02em;
     z-index: 100;
@@ -2101,7 +2093,6 @@ body.admin-bar .pswp {
 
 .pswp__caption__center {
 	padding: 13px 0!important;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem!important;
 	font-weight: 300;
 	letter-spacing: .04em;
@@ -2240,7 +2231,6 @@ a.pswp__share--facebook:focus:before {
 .entry-full .entry-thumb-caption {
 	padding-top: 8px;
 	margin: 0 0 -23px;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.3rem!important;
 	font-weight: 300;
 	color: #6e6e6e;
@@ -2326,7 +2316,6 @@ a.pswp__share--facebook:focus:before {
 
 .copyright {
 	font-size: 13px;
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: .04em;
 	color: #141414;
 	padding: 1.4rem 0 1.5rem;
@@ -2408,7 +2397,6 @@ body {
 	border: 1px solid #d2d2d2;
 	border-radius: 99999px;
 	font-size: 1.3rem!important;
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: .04em;
 	line-height: 1;
@@ -2585,7 +2573,6 @@ body {
 }
 
 .search-popup input.search-input {
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 3.8rem;
 	letter-spacing: -.01em;
@@ -2801,7 +2788,6 @@ figure.comment-avatar img {
 
 .comment-date {
 	margin-bottom: 1.4rem;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
 	letter-spacing: .04em;
 	color:#6e6e6e;
@@ -2848,7 +2834,6 @@ figure.comment-avatar img {
 .logged-in-as,
 .subscribe-label,
 .comment-form-cookies-consent label {
-	font-family: 'mauerRenner', 'Futura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	font-weight: 300;
 	color: #6e6e6e;
@@ -2877,7 +2862,6 @@ figure.comment-avatar img {
 
 .form-allowed-tags {
 	font-size:1.4rem;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-bottom:30px;
 }
 
@@ -2888,7 +2872,6 @@ figure.comment-avatar img {
 	color:#5d5d5d;
 	max-width:500px;
 	font-size:1.4rem;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #commentform p.form-submit {
@@ -2953,7 +2936,6 @@ p.comment-subscription-form + p.comment-subscription-form {
 
 .comment-reply-link {
 	text-transform: lowercase;
-	font-family: 'mauerRenner', Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.4rem;
 	letter-spacing: .04em;
 }
